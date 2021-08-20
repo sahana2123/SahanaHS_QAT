@@ -16,7 +16,7 @@ public class OracleConnect {
 		Connection con = DriverManager.getConnection(url,username,password);
 		System.out.println("Connection created");
 		Statement stmt = con.createStatement();
-		/*
+		
 		String createQuery="CREATE TABLE employee (emplid NUMBER(2),FNAME VARCHAR(20),LNAME VARCHAR(20),ADDR VARCHAR(20))";
 		stmt.executeUpdate(createQuery);
 		String insertRecord1="INSERT INTO employee VALUES(1,'ANU','L','Hassan')";
@@ -26,7 +26,7 @@ public class OracleConnect {
 		String insertRecord3="INSERT INTO employee VALUES(3,'manu','raj','dehli')";
 		stmt.executeUpdate(insertRecord3);
 		String insertRecord4="INSERT INTO employee VALUES(4,'sanu','raj','beng')";
-		stmt.executeUpdate(insertRecord4);*/
+		stmt.executeUpdate(insertRecord4);
 		
 		String UpdateQuery=" Update employee SET lname='HS' where emplid=3 " ;
 		stmt.executeQuery(UpdateQuery);
